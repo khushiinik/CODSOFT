@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        
+        header {
+            background-color: #ffffff;
+            color: #380069;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .header-left h1 {
+            font-size: 40px;
+            font-family: 'Garamond', serif;
+            font-style: italic;
+            
+        }
+        
+        .header-right ul {
+            list-style: none;
+        }
+        
+        .header-right ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .header-right ul li a {
+            color: #380069;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .header-right ul li a:hover {
+            color: #ff6600;
+        }
+        
+        section {
+            padding-top: 200px;
+            padding-left: 80px;
+            background-color: #fff;
+        }
+        
+        .intro-left {
+            width: 60%;
+            float: left;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .intro-left h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        
+        .contact-button, .resume-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-button:hover, .resume-button:hover {
+            background-color: #ff4500;
+        }
+        
+        .intro-right {
+            width: 40%;
+            float: right;
+            text-align: center;
+        }
+        
+        .intro-right img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+ 
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .header-right {
+                margin-top: 20px;
+            }
+        
+            .intro-left, .intro-right {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+        
+            .intro-left p {
+                font-size: 16px;
+            }
+        }
+        p {
+    margin-bottom: 5px; 
+}
+
+
+#projects {
+    padding: 100px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: flex-start; 
+}
+
+.section-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    grid-column: span 2;
+}
+
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #ff4500;
+}
+
+
+        </style>
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Khushii Nikhade</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                  <b><li><a href="#skills">Skills</a></li></b>
+                  <b><li><a href="#projects">Projects</a></li></b>
+                  <b><li><a href="#achievements">Achievements</a></li></b>
+                  <b><li><a href="#experience">Experience</a></li></b>
+                  <b><li><a href="#contact">Contact</a></li></b>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="intro-left">
+            <h2>Introduction</h2>
+            <p>I am A skilled and resourceful computer science student,</p>
+            <p>adept at tackling problems with a creative mindset.</p>
+            <p> Programming expertise spans SQL, C, JavaScript, Python, and Java,</p>
+            <p>allowing me to handle both front-end and back-end development proficiently.</p>
+            <p> A natural leader, excels in communication and teamwork,</p>
+            <p>readily contributing innovative ideas.</p>
+            <P>Known for my strong work ethic and collaborative approach, I am committed to</P>
+            <p>delivering exceptional results.</p>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg" alt="LinkedIn"></a>
+                <a href="mailto:youremail@gmail.com"><img src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-Logo.jpg" alt="Gmail"></a>
+            </div>
+            <a href="#contact" class="contact-button">Contact</a>
+            <a href="your-resume.pdf" target="_blank" class="resume-button">See My Resume</a>
+        </div>
+        <div class="intro-right">
+            <img src="https://media.istockphoto.com/id/1227583041/vector/online-learning.jpg?s=612x612&w=0&k=20&c=Z-wtqpKq8OQOye7JqRyncwPvkHgwCqDQfPdiB39In3A=" alt="Your Photo">
+        </div>
+    </section>
+<section id="projects">
+    <h2 class="section-heading">Projects</h2>
+    <div class="project-card">
+        <h3>E-learning Submission Portal</h3>
+        <p>A platform enabling students to submit and monitor their submissions while providing teachers with tracking capabilities.</p>
+        
+    </div>
+    <div class="project-card">
+        <h3>Hospital Management System</h3>
+        <p>An application designed to manage patients' information and monitor their health status.</p>
+        
+    </div>
+    <div class="project-card">
+        <h3>Studio Interior Designing</h3>
+        <p>Created the layout and design for four to five rooms within a photography studio.</p>
+        
+    </div>
+    <div class="project-card">
+        <h3>iOS Website Clone</h3>
+        <p>Developed a clone of the iOS official website using HTML, CSS, and other related technologies.</p>
+       
+    </div>
+</section>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const headerLinks = document.querySelectorAll("nav ul li a");
+
+    headerLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+    </script> 
+</body>
+</html>
