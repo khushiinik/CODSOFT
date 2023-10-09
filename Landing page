@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: calibri, sans-serif;
+    color: #333;
+}
+
+.top-header {
+    background: linear-gradient(45deg, #FF6B6B, #FFA69E, #FF6B6B, #FFA69E);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icon {
+    width: 10px; 
+    height: 10px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    margin-left: 20px; 
+}
+.social-links img {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.contact-info {
+    margin-right: 20px;
+}
+
+.main-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.left-title h1 {
+    color: #FF6B6B;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.social-links img {
+    width: 40px; 
+    height: 40px; 
+}
+
+.social-links {
+    margin-left: 40px;
+}
+
+nav a:hover {
+    color: #FF6B6B;
+}
+.slideshow-container {
+            max-width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px; 
+        }
+
+        .slideshow-image {
+            width: 100%;
+            display: none;
+        }
+
+        .slideshow-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .slide-content {
+            position: absolute;
+            bottom: 70px; 
+            left: 90px; 
+            color: #ffffff;
+            text-align: right;
+            padding: 10px;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .slide-content h2 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .slide-content p {
+            font-size: 30px;
+        }
+.container-window {
+    width: 100%;
+    height: 30vh; 
+    background: linear-gradient(45deg,  #FF6B6B, #FFA69E, #FF6B6B, #FFA69E);
+    position: relative;
+    top: 0px; 
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px); 
+    background-color:linear-gradient(45deg,  #FF6B6B, #FFA69E, #FF6B6B, #FFA69E);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+}
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.read-more-toggle {
+            width: 150px;
+            height: 50px;
+            background: radial-gradient(circle, #FF6B6B, #FFA69E);
+            border-radius: 25px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px auto;
+        }
+
+        .read-more-toggle:hover {
+            background: radial-gradient(circle, #FFA69E, #FF6B6B);
+        }
+
+        .read-more-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .read-more-content p {
+            color: #333;
+            margin: 0;
+            padding: 10px;
+        }
+        .tabular-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex-basis: calc(50% - 20px);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="social-links">
+           
+            <a href="#">
+                <img src="https://i.pinimg.com/originals/ce/d6/6e/ced66ecfc53814d71f8774789b55cc76.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="https://static-00.iconduck.com/assets.00/social-instagram-icon-2048x2048-xuel0xhc.png"></a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" alt="Instagram">
+            </a>
+            
+        </div>
+        <div class="contact-info">
+            <p>Contact Us: example@example.com</p>
+        </div>
+    </header>
+    <header class="main-header">
+        <div class="left-title">
+            <h1>LANDING PAGE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#buy-now">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+    
+    </section>
+    <div class="slideshow-container">
+    <div class="slideshow-image">
+        <img src="https://www.kobchicago.org/wp-content/uploads/2021/01/bookkeeping-and-accounting-business.jpg" alt="Image 1">
+        <div class="slide-content">
+            <h2>CREATIVE AGENCY</h2>
+            <p> A creative agency synopsis is a concise and compelling overview of a creative agency's mission, services, </p>
+              <p>services, capabilities, and unique selling points. It serves as a marketing tool to attract potential clients and partners. </p>
+        </div>
+    </div>
+    <div class="slideshow-image">
+        <img src="https://images.inc.com/uploaded_files/image/1920x1080/getty_603992138_315591.jpg" alt="Image 2">
+    </div>
+    <div class="slideshow-image">
+        <img src="https://www.affinityassociates.com/wp-content/uploads/2021/01/teamwork_business_accounting_1600x600_banner-e1629118001792.jpg" alt="Image 3">
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+    <div class="container-window">
+        <div class="container">
+            <div class="column">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of creative services, including web design, graphic design, and digital marketing.</p>
+            </div>
+            <div class="column">
+                <h2>Portfolio</h2>
+                <p>Explore our portfolio to see some of our latest and greatest projects that showcase our creativity and expertise.</p>
+            </div>
+            <div class="column">
+                <h2>Meet Our Team</h2>
+                <p>Our talented and passionate team of professionals is dedicated to bringing your creative ideas to life.</p>
+            </div>
+        </div>    
+    </div>
+
+<div class="about-us-container">
+    <div class="text-content">
+        <h2>About Us</h2>
+        <p> We are the architects of imagination and the artisans of innovation. We're not just a creative agency; </p>
+        <p>We're your partners in shaping stories, designing experiences, and crafting brand identities that resonate.</p>
+        <br>
+        <div class="tabular-columns">
+            <div class="column">
+                <h2>Our Story</h2>
+                <p>
+                    Our Creative Agency emerged from a shared passion for creativity and a vision to redefine the boundaries of design and communication. Our journey began with a simple idea: to bring together a team of diverse talents who could collaborate to inspire and transform.
+                </p>
+            </div>
+            <div class="column">
+                <h2>Our Mission</h2>
+                <p>
+                    We exist to bring your brand's unique narrative to life, making it memorable and meaningful. Our mission is to bridge the gap between dreams and reality through artistry, strategy, and technology. We thrive on turning visions into vibrant visuals, ideas into immersive experiences, and concepts into captivating content.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="image-content">
+        <img src="https://img.freepik.com/free-photo/businessman-presenting-something-isolated-white-background_1368-6049.jpg" alt="About Us Image">
+    </div>
+</div>
+<div class="read-more-toggle" onclick="toggleReadMore()">Read More</div>
+    <div class="read-more-content">
+        <p>
+            We are the architects of imagination and the artisans of innovation. We're not just a creative agency; we're your partners in shaping stories, designing experiences, and crafting brand identities that resonate.
+        </p>
+        <p>
+            Our Creative Agency emerged from a shared passion for creativity and a vision to redefine the boundaries of design and communication. Our journey began with a simple idea: to bring together a team of diverse talents who could collaborate to inspire and transform.
+        </p>
+        <!-- Add more content here -->
+    </div>
+<script>
+    let currentSlide = 1;
+    showSlide(currentSlide);
+
+    function changeSlide(n) {
+        showSlide(currentSlide += n);
+    }
+
+    function showSlide(n) {
+        const slides = document.querySelectorAll('.slideshow-image');
+        
+        if (n > slides.length) {
+            currentSlide = 1;
+        }
+
+        if (n < 1) {
+            currentSlide = slides.length;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+
+        slides[currentSlide - 1].style.display = 'block';
+    }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        .slideshow-container {
+            max-width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 0px; 
+        }
+
+        .slideshow-image {
+            width: 100%;
+            display: none;
+        }
+
+        .slideshow-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .slide-content {
+            position: absolute;
+            bottom: 70px; 
+            left: 90px; 
+            color: #ffffff;
+            text-align: right;
+            padding: 10px;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .slide-content h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .slide-content p {
+            font-size: 15px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+</head>
+<body>
+
+    <div class="slideshow-container">
+        <div class="slideshow-image">
+            <img src="https://www.kobchicago.org/wp-content/uploads/2021/01/bookkeeping-and-accounting-business.jpg" alt="Image 1">
+            <div class="slide-content">
+                <h2>TEAMWORK</h2>
+                <p> When individuals collaborate effectively as a team, they can achieve more, solve complex problems,</p>
+                  <p> and accomplish goals more efficiently than if they were working alone. </p>
+            </div>
+        </div>
+        <div class="slideshow-image">
+            <img src="https://images.inc.com/uploaded_files/image/1920x1080/getty_603992138_315591.jpg" alt="Image 2">
+            <div class="slide-content">
+        </div>
+        <div class="slideshow-image">
+            <img src="https://www.affinityassociates.com/wp-content/uploads/2021/01/teamwork_business_accounting_1600x600_banner-e1629118001792.jpg" alt="Image 3">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        showSlide(currentSlide);
+
+        function changeSlide(n) {
+            showSlide(currentSlide += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slideshow-image');
+            
+            if (n > slides.length) {
+                currentSlide = 1;
+            }
+
+            if (n < 1) {
+                currentSlide = slides.length;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            slides[currentSlide - 1].style.display = 'block';
+        }
+    </script>
+</body>
+</html>
